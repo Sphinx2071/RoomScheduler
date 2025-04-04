@@ -8,15 +8,15 @@ public class Booking {
     private LocalDate checkOut;
     private String userName;
     private int roomNumber;
-    private boolean appreved;
+    private boolean approved;
 
-    public Booking(int bookingID, LocalDate checkIn, LocalDate checkOut, String userName, int roomNumber, boolean appreved) {
+    public Booking(int bookingID, LocalDate checkIn, LocalDate checkOut, String userName, int roomNumber, boolean approved) {
         this.bookingID = bookingID;
         this.checkIn = checkIn;
         this.checkOut = checkOut;
         this.userName = userName;
         this.roomNumber = roomNumber;
-        this.appreved = appreved;
+        this.approved = approved;
     }
 
     public int getBookingID() {
@@ -59,12 +59,12 @@ public class Booking {
         this.roomNumber = roomNumber;
     }
 
-    public boolean isAppreved() {
-        return appreved;
+    public boolean isApproved() {
+        return approved;
     }
 
-    public void setAppreved(boolean appreved) {
-        this.appreved = appreved;
+    public void setApproved(boolean approved) {
+        this.approved = approved;
     }
 
     @Override
@@ -75,7 +75,7 @@ public class Booking {
                 ", checkOut=" + checkOut +
                 ", userName='" + userName + '\'' +
                 ", roomNumber=" + roomNumber +
-                ", appreved=" + appreved +
+                ", approved=" + approved +
                 '}';
     }
 }
