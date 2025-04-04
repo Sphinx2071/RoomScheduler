@@ -5,9 +5,9 @@ import java.lang.reflect.Type;
 public class UserProfile {
     private String userName;
     private String password;
-    private Type userType;
+    private boolean userType;
 
-    public UserProfile(String userName, String password, Type userType) {
+    public UserProfile(String userName, String password, boolean userType) {
         this.userName = userName;
         this.password = password;
         this.userType = userType;
@@ -29,11 +29,11 @@ public class UserProfile {
         this.password = password;
     }
 
-    public Type getUserType() {
+    public boolean isUserType() {
         return userType;
     }
 
-    public void setUserType(Type userType) {
+    public void setUserType(boolean userType) {
         this.userType = userType;
     }
 
@@ -45,7 +45,5 @@ public class UserProfile {
                 ", userType=" + userType +
                 '}';
     }
-
-
 }
 
