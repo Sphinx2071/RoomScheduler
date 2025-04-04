@@ -8,9 +8,9 @@ public class UserProfile {
     private boolean userType;
 
     public UserProfile(String userName, String password, boolean userType) {
-        this.userName = userName;
-        this.password = password;
-        this.userType = userType;
+        setUserName(userName);
+        setPassword(password);
+        setUserType(userType);
     }
 
     public String getUserName() {

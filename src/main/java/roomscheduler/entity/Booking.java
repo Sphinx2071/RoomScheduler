@@ -11,12 +11,10 @@ public class Booking {
     private boolean approved;
 
     public Booking(int bookingID, LocalDate checkIn, LocalDate checkOut, String userName, int roomNumber, boolean approved) {
-        this.bookingID = bookingID;
-        this.checkIn = checkIn;
-        this.checkOut = checkOut;
-        this.userName = userName;
-        this.roomNumber = roomNumber;
-        this.approved = approved;
+        setBookingID(bookingID);
+        setCheckIn(checkIn);
+        setCheckOut(checkOut);
+        setUserName(userName);
     }
 
     public int getBookingID() {
